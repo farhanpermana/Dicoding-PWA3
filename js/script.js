@@ -242,9 +242,9 @@ function disolayFavTeam() {
                             `
       
         }
-        
+        if(favs.length == 0) data += '<h5 class="center-align red-text">Data team favorite kosong !</h5>'
     })
-    if(data.length == 0) data += '<h5 class="center-align red-text">Data team favorite kosong !</h5>'
+
     
     loadPage('fav-team').then(function () {
         const ulTeamFav = document.querySelector('#ul-team-fav')
